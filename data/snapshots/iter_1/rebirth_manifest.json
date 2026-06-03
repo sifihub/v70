@@ -1,0 +1,21 @@
+{
+  "next_iteration": 2,
+  "new_repo_name": "v2",
+  "new_repo_url": "https://github.com/sifihub/v2",
+  "current_repo": "v1",
+  "snapshot_path": "data/snapshots/iter_1",
+  "memory_stats": {
+    "beliefs": 6,
+    "memories": 2,
+    "interactions": 0,
+    "lineage": 0,
+    "performance": 0,
+    "reflections": 0,
+    "working_memory": 2,
+    "selector_strategies": 0,
+    "source_assets": 6,
+    "posted_sources": 0
+  },
+  "ancestor_repo": "v1",
+  "private_repo": false
+}

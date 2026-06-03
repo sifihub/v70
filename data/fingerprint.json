@@ -1,0 +1,16 @@
+{
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+  "window_width": 1366,
+  "window_height": 768,
+  "timezone": "Asia/Kolkata",
+  "language": "en-US",
+  "languages": [
+    "en-US",
+    "en"
+  ],
+  "platform": "Win32",
+  "vendor": "Google Inc.",
+  "hardware_concurrency": 8,
+  "device_memory": 8,
+  "device_scale_factor": 1
+}

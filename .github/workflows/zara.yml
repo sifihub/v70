@@ -1,0 +1,212 @@
+name: Zara v1
+
+on:
+  repository_dispatch:
+    types: [rebirth-trigger]
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: Boot validation or full Zara cycle
+        required: true
+        default: full
+        type: choice
+        options:
+          - boot
+          - full
+      run_hours:
+        description: Hours to run for full mode
+        required: false
+        default: "5.0"
+        type: string
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: zara-${{ github.repository }}
+  cancel-in-progress: true
+
+env:
+  RUN_HOURS: "5.0"
+  ZARA_MAX_RUNTIME_HOURS: "4.5"
+  ZARA_X_POST_ATTEMPTS: "2"
+  ZARA_REPO_TEMPLATE: "v{iteration}"
+  ZARA_REPO_PRIVATE: "0"
+  ZARA_DELETE_PREVIOUS_REPO_ON_BOOT: "1"
+  ZARA_TRIGGER_AFTER_PUSH: "1"
+  ZARA_CLEAR_WDM_CACHE: "0"
+  ZARA_PROFILE_DIRECTORY: "Default"
+  ZARA_WINDOW_SIZE: "1345x610"
+  ZARA_PROFILE_PATH: "/app/chromium"
+  ZARA_NO_HEADLESS: "0"
+  ZARA_USE_XVFB: "0"
+  ZARA_DRIVER_BINARY: ""
+  ZARA_EXTRA_CHROME_ARGUMENTS: ""
+  ZARA_EXTRA_BINARY_CANDIDATES: ""
+  ZARA_ENABLE_TREND_RESEARCH: "1"
+  ZARA_ENABLE_X_POSTS: "1"
+  ZARA_ENABLE_X_COMMENTS: "1"
+  ZARA_ENABLE_X_REPLIES: "0"
+  ZARA_ENABLE_TREND_COMMENTS: "1"
+  ZARA_X_SEARCH_MODE: "top"
+  ZARA_REQUIRE_MEDIA_FOR_X_POSTS: "1"
+  ZARA_MIN_SOURCE_LIKES: "2200"
+  ZARA_MIN_SOURCE_REPOSTS: "220"
+  ZARA_MIN_SOURCE_REPLIES: "35"
+  ZARA_MIN_SOURCE_VIEWS_IF_VISIBLE: "250000"
+  ZARA_MIN_SOURCE_COMBINED: "3600"
+  ZARA_MIN_COMMENT_SOURCE_LIKES: "1600"
+  ZARA_MIN_COMMENT_SOURCE_REPLIES: "60"
+  ZARA_MIN_COMMENT_SOURCE_VIEWS: "150000"
+  ZARA_MIN_COMMENT_SOURCE_COMBINED: "2400"
+  ZARA_MAX_TREND_COMMENTS_PER_CYCLE: "2"
+  ZARA_COMMENT_COOLDOWN_SECONDS: "18"
+  ZARA_POST_STYLE: "question-led"
+  ZARA_ENABLE_LOCAL_OLLAMA: "1"
+  ZARA_PREFER_LOCAL_OLLAMA: "1"
+  ZARA_LLM_PREFERENCE: "local-first"
+  ZARA_ENABLE_DYNAMIC_TREND_QUERIES: "0"
+  ZARA_ALLOW_SIMULATED_TRENDS: "0"
+  ZARA_SNAPSHOT_RETENTION: "8"
+  ZARA_PRIMARY_MODEL: "tinyllama"
+  ZARA_OLLAMA_MODELS: "tinyllama"
+  ZARA_BOOTSTRAP_MODELS: "tinyllama"
+  ZARA_MODEL_DIRECTOR: "tinyllama"
+  ZARA_MODEL_TREND: "tinyllama"
+  ZARA_MODEL_CREATOR: "tinyllama"
+  ZARA_MODEL_REPHRASE: "tinyllama"
+  ZARA_MODEL_SELECTOR: "tinyllama"
+  ZARA_MODEL_CODING: "tinyllama"
+  ZARA_MODEL_SUMMARY: "tinyllama"
+  ZARA_MODEL_QUICK: "tinyllama"
+  ZARA_OLLAMA_BOOT_TIMEOUT_SECONDS: "90"
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  run:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 355
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Build Zara container
+        run: docker build -t zara-v1:latest .
+
+      - name: Run Zara inside Docker
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_PAT_FG: ${{ secrets.GH_PAT_FG }}
+          OLLAMA_HOST: ${{ secrets.OLLAMA_HOST }}
+          ZARA_GITHUB_USERNAME: ${{ secrets.ZARA_GITHUB_USERNAME }}
+          ZARA_GITHUB_PASSWORD: ${{ secrets.ZARA_GITHUB_PASSWORD }}
+          ZARA_X_USERNAME: ${{ secrets.ZARA_X_USERNAME }}
+          ZARA_X_PASSWORD: ${{ secrets.ZARA_X_PASSWORD }}
+          ZARA_X_DM_PASSCODE: ${{ secrets.ZARA_X_DM_PASSCODE }}
+          ZARA_GOOGLE_EMAIL: ${{ secrets.ZARA_GOOGLE_EMAIL }}
+          ZARA_GOOGLE_PASSWORD: ${{ secrets.ZARA_GOOGLE_PASSWORD }}
+          ZARA_PROTON_USERNAME: ${{ secrets.ZARA_PROTON_USERNAME }}
+          ZARA_PROTON_PASSWORD: ${{ secrets.ZARA_PROTON_PASSWORD }}
+          ZARA_CHATGPT_EMAIL: ${{ secrets.ZARA_CHATGPT_EMAIL }}
+          ZARA_CHATGPT_PASSWORD: ${{ secrets.ZARA_CHATGPT_PASSWORD }}
+          ZARA_DEEPSEEK_EMAIL: ${{ secrets.ZARA_DEEPSEEK_EMAIL }}
+          ZARA_DEEPSEEK_PASSWORD: ${{ secrets.ZARA_DEEPSEEK_PASSWORD }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          HOURS="$RUN_HOURS"
+          BOOT_ONLY="0"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ "${{ github.event.inputs.run_mode }}" = "boot" ]; then
+              BOOT_ONLY="1"
+            fi
+            if [ -n "${{ github.event.inputs.run_hours }}" ]; then
+              HOURS="${{ github.event.inputs.run_hours }}"
+            fi
+          fi
+
+          docker run --rm --shm-size=2g \
+            -e GH_PAT \
+            -e GH_PAT_FG \
+            -e OLLAMA_HOST \
+            -e GITHUB_REPOSITORY \
+            -e GITHUB_ACTIONS=true \
+            -e CI=true \
+            -e DISPLAY=:99 \
+            -e CHROMIUM_PATH=/usr/bin/ungoogled-chromium \
+            -e ZARA_CHROMIUM_BINARY=/usr/bin/ungoogled-chromium \
+            -e ZARA_PROFILE_PATH="${{ env.ZARA_PROFILE_PATH }}" \
+            -e ZARA_PROFILE_DIRECTORY="${{ env.ZARA_PROFILE_DIRECTORY }}" \
+            -e ZARA_WINDOW_SIZE="${{ env.ZARA_WINDOW_SIZE }}" \
+            -e ZARA_NO_HEADLESS="${{ env.ZARA_NO_HEADLESS }}" \
+            -e ZARA_USE_XVFB="${{ env.ZARA_USE_XVFB }}" \
+            -e ZARA_DRIVER_BINARY="${{ env.ZARA_DRIVER_BINARY }}" \
+            -e ZARA_EXTRA_CHROME_ARGUMENTS="${{ env.ZARA_EXTRA_CHROME_ARGUMENTS }}" \
+            -e ZARA_EXTRA_BINARY_CANDIDATES="${{ env.ZARA_EXTRA_BINARY_CANDIDATES }}" \
+            -e ZARA_GITHUB_USERNAME \
+            -e ZARA_GITHUB_PASSWORD \
+            -e ZARA_X_USERNAME \
+            -e ZARA_X_PASSWORD \
+            -e ZARA_X_DM_PASSCODE \
+            -e ZARA_GOOGLE_EMAIL \
+            -e ZARA_GOOGLE_PASSWORD \
+            -e ZARA_PROTON_USERNAME \
+            -e ZARA_PROTON_PASSWORD \
+            -e ZARA_CHATGPT_EMAIL \
+            -e ZARA_CHATGPT_PASSWORD \
+            -e ZARA_DEEPSEEK_EMAIL \
+            -e ZARA_DEEPSEEK_PASSWORD \
+            -e ZARA_BOOT_SEQUENCE_ONLY="$BOOT_ONLY" \
+            -e ZARA_RUN_HOURS_OVERRIDE="$HOURS" \
+            -e ZARA_REPO_TEMPLATE="${{ env.ZARA_REPO_TEMPLATE }}" \
+            -e ZARA_REPO_PRIVATE="${{ env.ZARA_REPO_PRIVATE }}" \
+            -e ZARA_DELETE_PREVIOUS_REPO_ON_BOOT="${{ env.ZARA_DELETE_PREVIOUS_REPO_ON_BOOT }}" \
+            -e ZARA_TRIGGER_AFTER_PUSH="${{ env.ZARA_TRIGGER_AFTER_PUSH }}" \
+            -e ZARA_CLEAR_WDM_CACHE="${{ env.ZARA_CLEAR_WDM_CACHE }}" \
+            -e ZARA_ENABLE_TREND_RESEARCH="${{ env.ZARA_ENABLE_TREND_RESEARCH }}" \
+            -e ZARA_ENABLE_X_POSTS="${{ env.ZARA_ENABLE_X_POSTS }}" \
+            -e ZARA_ENABLE_X_COMMENTS="${{ env.ZARA_ENABLE_X_COMMENTS }}" \
+            -e ZARA_ENABLE_X_REPLIES="${{ env.ZARA_ENABLE_X_REPLIES }}" \
+            -e ZARA_ENABLE_TREND_COMMENTS="${{ env.ZARA_ENABLE_TREND_COMMENTS }}" \
+            -e ZARA_X_SEARCH_MODE="${{ env.ZARA_X_SEARCH_MODE }}" \
+            -e ZARA_REQUIRE_MEDIA_FOR_X_POSTS="${{ env.ZARA_REQUIRE_MEDIA_FOR_X_POSTS }}" \
+            -e ZARA_MIN_SOURCE_LIKES="${{ env.ZARA_MIN_SOURCE_LIKES }}" \
+            -e ZARA_MIN_SOURCE_REPOSTS="${{ env.ZARA_MIN_SOURCE_REPOSTS }}" \
+            -e ZARA_MIN_SOURCE_VIEWS_IF_VISIBLE="${{ env.ZARA_MIN_SOURCE_VIEWS_IF_VISIBLE }}" \
+            -e ZARA_MIN_SOURCE_COMBINED="${{ env.ZARA_MIN_SOURCE_COMBINED }}" \
+            -e ZARA_MIN_COMMENT_SOURCE_LIKES="${{ env.ZARA_MIN_COMMENT_SOURCE_LIKES }}" \
+            -e ZARA_MIN_COMMENT_SOURCE_REPLIES="${{ env.ZARA_MIN_COMMENT_SOURCE_REPLIES }}" \
+            -e ZARA_MIN_COMMENT_SOURCE_VIEWS="${{ env.ZARA_MIN_COMMENT_SOURCE_VIEWS }}" \
+            -e ZARA_MIN_COMMENT_SOURCE_COMBINED="${{ env.ZARA_MIN_COMMENT_SOURCE_COMBINED }}" \
+            -e ZARA_MAX_TREND_COMMENTS_PER_CYCLE="${{ env.ZARA_MAX_TREND_COMMENTS_PER_CYCLE }}" \
+            -e ZARA_COMMENT_COOLDOWN_SECONDS="${{ env.ZARA_COMMENT_COOLDOWN_SECONDS }}" \
+            -e ZARA_POST_STYLE="${{ env.ZARA_POST_STYLE }}" \
+            -e ZARA_ENABLE_LOCAL_OLLAMA="${{ env.ZARA_ENABLE_LOCAL_OLLAMA }}" \
+            -e ZARA_PREFER_LOCAL_OLLAMA="${{ env.ZARA_PREFER_LOCAL_OLLAMA }}" \
+            -e ZARA_LLM_PREFERENCE="${{ env.ZARA_LLM_PREFERENCE }}" \
+            -e ZARA_ENABLE_DYNAMIC_TREND_QUERIES="${{ env.ZARA_ENABLE_DYNAMIC_TREND_QUERIES }}" \
+            -e ZARA_ALLOW_SIMULATED_TRENDS="${{ env.ZARA_ALLOW_SIMULATED_TRENDS }}" \
+            -e ZARA_SNAPSHOT_RETENTION="${{ env.ZARA_SNAPSHOT_RETENTION }}" \
+            -e ZARA_MAX_RUNTIME_HOURS="${{ env.ZARA_MAX_RUNTIME_HOURS }}" \
+            -e ZARA_X_POST_ATTEMPTS="${{ env.ZARA_X_POST_ATTEMPTS }}" \
+            -e ZARA_OLLAMA_BOOT_TIMEOUT_SECONDS="${{ env.ZARA_OLLAMA_BOOT_TIMEOUT_SECONDS }}" \
+            -e ZARA_PRIMARY_MODEL="${{ env.ZARA_PRIMARY_MODEL }}" \
+            -e ZARA_OLLAMA_MODELS="${{ env.ZARA_OLLAMA_MODELS }}" \
+            -e ZARA_BOOTSTRAP_MODELS="${{ env.ZARA_BOOTSTRAP_MODELS }}" \
+            -e ZARA_MODEL_DIRECTOR="${{ env.ZARA_MODEL_DIRECTOR }}" \
+            -e ZARA_MODEL_TREND="${{ env.ZARA_MODEL_TREND }}" \
+            -e ZARA_MODEL_CREATOR="${{ env.ZARA_MODEL_CREATOR }}" \
+            -e ZARA_MODEL_REPHRASE="${{ env.ZARA_MODEL_REPHRASE }}" \
+            -e ZARA_MODEL_SELECTOR="${{ env.ZARA_MODEL_SELECTOR }}" \
+            -e ZARA_MODEL_CODING="${{ env.ZARA_MODEL_CODING }}" \
+            -e ZARA_MODEL_SUMMARY="${{ env.ZARA_MODEL_SUMMARY }}" \
+            -e ZARA_MODEL_QUICK="${{ env.ZARA_MODEL_QUICK }}" \
+            -e PYTHONUNBUFFERED=1 \
+            -v "${{ github.workspace }}:/app" \
+            -w /app \
+            zara-v1:latest \
+            bash -lc 'mkdir -p data/snapshots chromium && [ -f iteration.txt ] || echo "1" > iteration.txt && [ -f task.txt ] || : > task.txt && [ -f prev_repo.txt ] || : > prev_repo.txt && cp iteration.txt data/iteration.txt || true && chmod +x scripts/bootstrap_ollama.sh && . ./scripts/bootstrap_ollama.sh && HEADLESS_FLAG="" && if [ "${ZARA_NO_HEADLESS:-0}" = "1" ]; then HEADLESS_FLAG="--no-headless"; fi && if [ "${ZARA_USE_XVFB:-0}" = "1" ]; then Xvfb :99 -screen 0 1366x768x24 >/tmp/xvfb.log 2>&1 & fi && if [ "$ZARA_BOOT_SEQUENCE_ONLY" = "1" ]; then python3 zara.py --run-hours "$ZARA_RUN_HOURS_OVERRIDE" --boot-validation-only $HEADLESS_FLAG; else python3 zara.py --run-hours "$ZARA_RUN_HOURS_OVERRIDE" $HEADLESS_FLAG; fi'

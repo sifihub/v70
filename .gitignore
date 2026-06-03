@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+_bro_*
+_v1_push
+_nexus_fresh
+_final_push
+patch_*.py
+puss/
+DEVMAP.txt
+data/nexus_memory.db
+*.log
+cook-profile/
+chrome-profile/

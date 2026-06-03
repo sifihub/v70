@@ -1,0 +1,415 @@
+{"timestamp": "2026-04-27T08:37:55.278534Z", "iteration": 1, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 0.001, "profile": "D:\\DHRUV\\Aii\\zara\\chromium"}}
+{"timestamp": "2026-04-27T08:37:55.293540Z", "iteration": 1, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-04-27T08:37:55.389516Z", "iteration": 1, "repo": "v1", "stage": "post_generation", "status": "ready", "details": {"preview": "Science Discovery is shifting faster than most people realize. The strongest signal is still being ignored.", "publish_enabled": false, "topic": "science discovery", "has_media": false}}
+{"timestamp": "2026-04-27T08:37:55.390532Z", "iteration": 1, "repo": "v1", "stage": "x_post", "status": "draft_only", "details": {"preview": "Science Discovery is shifting faster than most people realize. The strongest signal is still being ignored.", "source": ""}}
+{"timestamp": "2026-04-27T08:38:00.399553Z", "iteration": 1, "repo": "v1", "stage": "weekly_reflection", "status": "skipped", "details": {"reason": "not enough recent posts"}}
+{"timestamp": "2026-04-28T13:46:16.690118Z", "iteration": 2, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 0.001, "profile": "D:\\DHRUV\\Aii\\zara\\chromium"}}
+{"timestamp": "2026-04-28T13:46:16.700111Z", "iteration": 2, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-04-28T13:46:16.746109Z", "iteration": 2, "repo": "v1", "stage": "x_post", "status": "no_candidate", "details": {}}
+{"timestamp": "2026-04-28T13:46:21.749431Z", "iteration": 2, "repo": "v1", "stage": "weekly_reflection", "status": "skipped", "details": {"reason": "dry run"}}
+{"timestamp": "2026-05-21T17:18:21.661158Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\cpr_repo"}}
+{"timestamp": "2026-05-21T17:18:21.662575Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T17:22:09.364863Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\new chromium\\chromium101"}}
+{"timestamp": "2026-05-21T17:22:09.366587Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T17:22:25.534010Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T17:22:25.536887Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T17:22:42.324531Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T17:22:42.408060Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:startup"}}
+{"timestamp": "2026-05-21T17:24:11.406573Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T17:24:11.407602Z", "iteration": 3, "repo": "v1", "stage": "x_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T17:24:11.441655Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "page_confusion:twitter"}}
+{"timestamp": "2026-05-21T17:24:12.123124Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:browser_llm"}}
+{"timestamp": "2026-05-21T17:24:16.170109Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T17:51:40.791344Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:browser_llm"}}
+{"timestamp": "2026-05-21T17:52:00.146973Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T17:52:52.245857Z", "iteration": 3, "repo": "v1", "stage": "page_confusion", "status": "captured", "details": {"site": "twitter", "goal": "log into X and reach the home timeline", "selector": ""}}
+{"timestamp": "2026-05-21T17:52:52.274583Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "github:startup"}}
+{"timestamp": "2026-05-21T17:53:11.776965Z", "iteration": 3, "repo": "v1", "stage": "github_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T17:53:11.777967Z", "iteration": 3, "repo": "v1", "stage": "github_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T17:53:11.801349Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:startup"}}
+{"timestamp": "2026-05-21T17:54:05.090300Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T17:54:05.091811Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T17:54:05.125240Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:startup"}}
+{"timestamp": "2026-05-21T17:54:13.276189Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T17:54:13.278845Z", "iteration": 3, "repo": "v1", "stage": "deepseek_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T17:54:13.303961Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T17:54:13.329007Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T17:55:34.033789Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T17:55:34.034970Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T17:55:34.035521Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T17:55:34.040477Z", "iteration": 3, "repo": "v1", "stage": "x_post", "status": "no_candidate", "details": {}}
+{"timestamp": "2026-05-21T17:55:34.046609Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T17:55:34.059057Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T17:55:50.798861Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\cpr_repo"}}
+{"timestamp": "2026-05-21T17:55:50.800255Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T17:55:57.642154Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T17:55:57.644449Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T17:56:18.929445Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T17:56:18.952329Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:startup"}}
+{"timestamp": "2026-05-21T17:56:44.560794Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T17:56:44.562978Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T17:56:44.564329Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T17:56:44.578447Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T17:58:19.315250Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T17:58:19.316259Z", "iteration": 3, "repo": "v1", "stage": "x_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T17:58:19.327916Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "page_confusion:twitter"}}
+{"timestamp": "2026-05-21T17:58:19.629044Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:browser_llm"}}
+{"timestamp": "2026-05-21T17:58:27.720846Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T18:00:28.277138Z", "iteration": 3, "repo": "v1", "stage": "page_confusion", "status": "captured", "details": {"site": "twitter", "goal": "log into X and reach the home timeline", "selector": ""}}
+{"timestamp": "2026-05-21T18:00:28.292980Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "github:startup"}}
+{"timestamp": "2026-05-21T18:01:06.199825Z", "iteration": 3, "repo": "v1", "stage": "github_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T18:01:06.201845Z", "iteration": 3, "repo": "v1", "stage": "github_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T18:01:06.397939Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:startup"}}
+{"timestamp": "2026-05-21T18:01:13.812023Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T18:01:13.813032Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T18:01:13.827469Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:startup"}}
+{"timestamp": "2026-05-21T18:01:25.373507Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T18:01:25.376915Z", "iteration": 3, "repo": "v1", "stage": "deepseek_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T18:01:25.394247Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T18:01:25.408667Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T18:02:41.486092Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T18:02:41.487029Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T18:02:41.487540Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T18:02:41.488667Z", "iteration": 3, "repo": "v1", "stage": "x_post", "status": "no_candidate", "details": {}}
+{"timestamp": "2026-05-21T18:02:41.500425Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T18:02:41.510632Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T18:03:56.597616Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T18:03:56.598132Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T18:03:56.598671Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T18:03:56.608493Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T18:37:30.152986Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\cpr_repo"}}
+{"timestamp": "2026-05-21T18:37:30.154304Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T18:37:53.896778Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T18:37:53.898017Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T18:38:01.590084Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T18:38:01.673069Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:startup"}}
+{"timestamp": "2026-05-21T18:39:15.883074Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T18:39:15.884408Z", "iteration": 3, "repo": "v1", "stage": "x_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T18:39:15.889537Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "page_confusion:twitter"}}
+{"timestamp": "2026-05-21T18:39:16.140030Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:browser_llm"}}
+{"timestamp": "2026-05-21T18:39:19.381762Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T18:40:31.721470Z", "iteration": 3, "repo": "v1", "stage": "page_confusion", "status": "captured", "details": {"site": "twitter", "goal": "log into X and reach the home timeline", "selector": ""}}
+{"timestamp": "2026-05-21T18:40:31.727713Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "github:startup"}}
+{"timestamp": "2026-05-21T18:40:35.693871Z", "iteration": 3, "repo": "v1", "stage": "github_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T18:40:35.696380Z", "iteration": 3, "repo": "v1", "stage": "github_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T18:40:35.818312Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:startup"}}
+{"timestamp": "2026-05-21T18:41:23.739368Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T18:41:23.739978Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T18:41:23.749163Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:startup"}}
+{"timestamp": "2026-05-21T18:41:28.080378Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T18:41:28.080378Z", "iteration": 3, "repo": "v1", "stage": "deepseek_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T18:41:28.091202Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T18:41:28.097538Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T18:42:40.219436Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T18:42:40.220492Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T18:42:40.221446Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T18:42:40.228049Z", "iteration": 3, "repo": "v1", "stage": "x_post", "status": "no_candidate", "details": {}}
+{"timestamp": "2026-05-21T18:42:40.235695Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T18:42:40.246151Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T18:43:51.514879Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T18:43:51.515435Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T18:43:51.515941Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T18:43:51.520100Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:26:49.564067Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\cpr_repo"}}
+{"timestamp": "2026-05-21T19:26:49.566028Z", "iteration": 3, "repo": "v1", "stage": "schedule", "status": "ready", "details": {"post_window_minutes": [90, 180], "comment_window_minutes": [4, 10], "mention_window_minutes": [90, 150], "notification_window_minutes": [120, 180], "comments_between_posts": [10, 40], "comment_batch": [2, 5], "next_post_seconds": 7140, "next_comment_seconds": 480}}
+{"timestamp": "2026-05-21T19:26:49.583904Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:26:49.634721Z", "iteration": 3, "repo": "v1", "stage": "post_generation", "status": "ready", "details": {"preview": "Entertainment News Filter:Videos is shifting faster than most people realize. The strongest signal is still being ignore", "publish_enabled": false, "topic": "entertainment news filter:videos", "media_type": "", "has_media": false}}
+{"timestamp": "2026-05-21T19:26:49.636405Z", "iteration": 3, "repo": "v1", "stage": "x_post", "status": "draft_only", "details": {"preview": "Entertainment News Filter:Videos is shifting faster than most people realize. The strongest signal is still being ignore", "source": ""}}
+{"timestamp": "2026-05-21T19:26:49.641695Z", "iteration": 3, "repo": "v1", "stage": "public_comment_budget", "status": "reset", "details": {"reason": "initial_post", "budget": 40}}
+{"timestamp": "2026-05-21T19:26:49.642305Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 1, "total": 5}}
+{"timestamp": "2026-05-21T19:26:49.642869Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 5, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.653660Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:26:49.697541Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:26:49.697541Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.698381Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 2, "total": 5}}
+{"timestamp": "2026-05-21T19:26:49.698381Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 4, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.704656Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:26:49.741648Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:26:49.743525Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.744790Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 3, "total": 5}}
+{"timestamp": "2026-05-21T19:26:49.745347Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 5, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.753361Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:26:49.797963Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:26:49.799964Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.800856Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 4, "total": 5}}
+{"timestamp": "2026-05-21T19:26:49.802014Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 2, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.813255Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:26:49.855015Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:26:49.856014Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.856014Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 5, "total": 5}}
+{"timestamp": "2026-05-21T19:26:49.857354Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 3, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.865030Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:26:49.906916Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:26:49.907915Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 40}}
+{"timestamp": "2026-05-21T19:26:49.909463Z", "iteration": 3, "repo": "v1", "stage": "notifications", "status": "skipped", "details": {"reason": "dry_run"}}
+{"timestamp": "2026-05-21T19:26:49.909463Z", "iteration": 3, "repo": "v1", "stage": "boot_sequence", "status": "complete", "details": {"first_post": "Entertainment News Filter:Videos is shifting faster than most people realize. The strongest signal is still being ignore"}}
+{"timestamp": "2026-05-21T19:27:00.201820Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "/app/chromium"}}
+{"timestamp": "2026-05-21T19:27:00.240085Z", "iteration": 3, "repo": "v1", "stage": "schedule", "status": "ready", "details": {"post_window_minutes": [90, 180], "comment_window_minutes": [4, 10], "mention_window_minutes": [90, 150], "notification_window_minutes": [120, 180], "comments_between_posts": [10, 40], "comment_batch": [2, 5], "next_post_seconds": 8040, "next_comment_seconds": 240}}
+{"timestamp": "2026-05-21T19:27:00.329347Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:27:00.695762Z", "iteration": 3, "repo": "v1", "stage": "post_generation", "status": "ready", "details": {"preview": "Quiet signal: Political Meme Or Geopolitics Meme Filter:Videos is shifting faster than most people realize. The stronges", "publish_enabled": false, "topic": "political meme OR geopolitics meme filte", "media_type": "", "has_media": false}}
+{"timestamp": "2026-05-21T19:27:00.701854Z", "iteration": 3, "repo": "v1", "stage": "x_post", "status": "draft_only", "details": {"preview": "Quiet signal: Political Meme Or Geopolitics Meme Filter:Videos is shifting faster than most people realize. The stronges", "source": ""}}
+{"timestamp": "2026-05-21T19:27:00.763015Z", "iteration": 3, "repo": "v1", "stage": "public_comment_budget", "status": "reset", "details": {"reason": "initial_post", "budget": 37}}
+{"timestamp": "2026-05-21T19:27:00.767543Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 1, "total": 2}}
+{"timestamp": "2026-05-21T19:27:00.794655Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 5, "budget_remaining": 37}}
+{"timestamp": "2026-05-21T19:27:00.874523Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:27:01.243260Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:27:01.247771Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 37}}
+{"timestamp": "2026-05-21T19:27:01.272223Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 2, "total": 2}}
+{"timestamp": "2026-05-21T19:27:01.297533Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 5, "budget_remaining": 37}}
+{"timestamp": "2026-05-21T19:27:01.364996Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:27:01.695641Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:27:01.701216Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 37}}
+{"timestamp": "2026-05-21T19:27:01.727210Z", "iteration": 3, "repo": "v1", "stage": "notifications", "status": "skipped", "details": {"reason": "dry_run"}}
+{"timestamp": "2026-05-21T19:27:01.758011Z", "iteration": 3, "repo": "v1", "stage": "boot_sequence", "status": "complete", "details": {"first_post": "Quiet signal: Political Meme Or Geopolitics Meme Filter:Videos is shifting faster than most people realize. The stronges"}}
+{"timestamp": "2026-05-21T19:28:00.640062Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "/app/chromium"}}
+{"timestamp": "2026-05-21T19:28:00.654553Z", "iteration": 3, "repo": "v1", "stage": "schedule", "status": "ready", "details": {"post_window_minutes": [90, 180], "comment_window_minutes": [4, 10], "mention_window_minutes": [90, 150], "notification_window_minutes": [120, 180], "comments_between_posts": [10, 40], "comment_batch": [2, 5], "next_post_seconds": 7380, "next_comment_seconds": 300}}
+{"timestamp": "2026-05-21T19:28:00.750475Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:28:01.042031Z", "iteration": 3, "repo": "v1", "stage": "post_generation", "status": "ready", "details": {"preview": "Quiet signal: Geopolitics Filter:Videos is shifting faster than most people realize. The strongest signal is still being", "publish_enabled": false, "topic": "geopolitics filter:videos", "media_type": "", "has_media": false}}
+{"timestamp": "2026-05-21T19:28:01.048235Z", "iteration": 3, "repo": "v1", "stage": "x_post", "status": "draft_only", "details": {"preview": "Quiet signal: Geopolitics Filter:Videos is shifting faster than most people realize. The strongest signal is still being", "source": ""}}
+{"timestamp": "2026-05-21T19:28:01.107040Z", "iteration": 3, "repo": "v1", "stage": "public_comment_budget", "status": "reset", "details": {"reason": "initial_post", "budget": 35}}
+{"timestamp": "2026-05-21T19:28:01.114232Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 1, "total": 2}}
+{"timestamp": "2026-05-21T19:28:01.135977Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 2, "budget_remaining": 35}}
+{"timestamp": "2026-05-21T19:28:01.210637Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:28:01.525521Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:28:01.530470Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 35}}
+{"timestamp": "2026-05-21T19:28:01.554992Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 2, "total": 2}}
+{"timestamp": "2026-05-21T19:28:01.578912Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 4, "budget_remaining": 35}}
+{"timestamp": "2026-05-21T19:28:01.650212Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:28:02.000543Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:28:02.006619Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 35}}
+{"timestamp": "2026-05-21T19:28:02.028063Z", "iteration": 3, "repo": "v1", "stage": "notifications", "status": "skipped", "details": {"reason": "dry_run"}}
+{"timestamp": "2026-05-21T19:28:02.051400Z", "iteration": 3, "repo": "v1", "stage": "boot_sequence", "status": "complete", "details": {"first_post": "Quiet signal: Geopolitics Filter:Videos is shifting faster than most people realize. The strongest signal is still being"}}
+{"timestamp": "2026-05-21T19:28:17.379652Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "/app/cpr_repo"}}
+{"timestamp": "2026-05-21T19:28:17.384911Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T19:28:25.800690Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:28:25.819303Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T19:28:36.141514Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:28:36.195303Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:startup"}}
+{"timestamp": "2026-05-21T19:29:56.014121Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:29:56.026236Z", "iteration": 3, "repo": "v1", "stage": "x_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T19:29:56.096920Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "page_confusion:twitter"}}
+{"timestamp": "2026-05-21T19:29:56.679275Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:browser_llm"}}
+{"timestamp": "2026-05-21T19:30:04.970202Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T19:31:05.425826Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:browser_llm"}}
+{"timestamp": "2026-05-21T19:31:09.761985Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T19:34:04.141010Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "/app/chromium"}}
+{"timestamp": "2026-05-21T19:34:04.151233Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T19:34:12.374038Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:34:12.563002Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T19:34:26.395087Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:34:26.464057Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:startup"}}
+{"timestamp": "2026-05-21T19:34:56.130585Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "/app/chromium"}}
+{"timestamp": "2026-05-21T19:34:56.136345Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T19:35:03.614374Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:35:03.681129Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T19:35:17.928822Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:35:17.961670Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:startup"}}
+{"timestamp": "2026-05-21T19:35:43.596936Z", "iteration": 3, "repo": "v1", "stage": "page_confusion", "status": "captured", "details": {"site": "twitter", "goal": "log into X and reach the home timeline", "selector": ""}}
+{"timestamp": "2026-05-21T19:35:43.620718Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "github:startup"}}
+{"timestamp": "2026-05-21T19:35:52.049763Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:35:52.076729Z", "iteration": 3, "repo": "v1", "stage": "x_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T19:35:52.235408Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "page_confusion:twitter"}}
+{"timestamp": "2026-05-21T19:35:54.630311Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:browser_llm"}}
+{"timestamp": "2026-05-21T19:35:56.606964Z", "iteration": 3, "repo": "v1", "stage": "github_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:35:56.683056Z", "iteration": 3, "repo": "v1", "stage": "github_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:35:56.797312Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "gemini:startup"}}
+{"timestamp": "2026-05-21T19:36:03.612278Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T19:36:11.164000Z", "iteration": 3, "repo": "v1", "stage": "gemini_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:36:11.184593Z", "iteration": 3, "repo": "v1", "stage": "gemini_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:36:11.238581Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:startup"}}
+{"timestamp": "2026-05-21T19:36:39.503311Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:36:39.510183Z", "iteration": 3, "repo": "v1", "stage": "x_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T19:36:39.551535Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "page_confusion:twitter"}}
+{"timestamp": "2026-05-21T19:36:39.944855Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:browser_llm"}}
+{"timestamp": "2026-05-21T19:36:46.918254Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T19:37:01.108495Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:37:01.118998Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T19:37:01.235083Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:startup"}}
+{"timestamp": "2026-05-21T19:37:04.323415Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:browser_llm"}}
+{"timestamp": "2026-05-21T19:37:06.065801Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:37:06.077442Z", "iteration": 3, "repo": "v1", "stage": "deepseek_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:37:06.163652Z", "iteration": 3, "repo": "v1", "stage": "schedule", "status": "ready", "details": {"post_window_minutes": [90, 180], "comment_window_minutes": [4, 10], "mention_window_minutes": [90, 150], "notification_window_minutes": [120, 180], "comments_between_posts": [10, 40], "comment_batch": [2, 5], "next_post_seconds": 7260, "next_comment_seconds": 420}}
+{"timestamp": "2026-05-21T19:37:06.473646Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:37:06.518230Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T19:37:42.855470Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:browser_llm"}}
+{"timestamp": "2026-05-21T19:37:53.024323Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "/app/chromium"}}
+{"timestamp": "2026-05-21T19:37:53.029363Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T19:38:00.713985Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:38:00.820127Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T19:38:13.025054Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:38:13.052559Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:startup"}}
+{"timestamp": "2026-05-21T19:39:39.541095Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:39:39.574318Z", "iteration": 3, "repo": "v1", "stage": "x_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T19:39:39.656872Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "page_confusion:twitter"}}
+{"timestamp": "2026-05-21T19:39:40.449030Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:browser_llm"}}
+{"timestamp": "2026-05-21T19:39:53.585016Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T19:40:49.017697Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:browser_llm"}}
+{"timestamp": "2026-05-21T19:40:54.025716Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T19:45:54.836772Z", "iteration": 3, "repo": "v1", "stage": "page_confusion", "status": "captured", "details": {"site": "twitter", "goal": "log into X and reach the home timeline", "selector": ""}}
+{"timestamp": "2026-05-21T19:45:55.022971Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "github:startup"}}
+{"timestamp": "2026-05-21T19:46:08.256068Z", "iteration": 3, "repo": "v1", "stage": "github_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:46:08.498519Z", "iteration": 3, "repo": "v1", "stage": "github_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:46:08.732731Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "gemini:startup"}}
+{"timestamp": "2026-05-21T19:46:23.140901Z", "iteration": 3, "repo": "v1", "stage": "gemini_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:46:23.149289Z", "iteration": 3, "repo": "v1", "stage": "gemini_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:46:23.238959Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:startup"}}
+{"timestamp": "2026-05-21T19:47:11.713008Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:47:11.724120Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T19:47:11.790391Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:startup"}}
+{"timestamp": "2026-05-21T19:47:16.348467Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T19:47:16.355775Z", "iteration": 3, "repo": "v1", "stage": "deepseek_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T19:47:16.509591Z", "iteration": 3, "repo": "v1", "stage": "schedule", "status": "ready", "details": {"post_window_minutes": [90, 180], "comment_window_minutes": [4, 10], "mention_window_minutes": [90, 150], "notification_window_minutes": [120, 180], "comments_between_posts": [10, 40], "comment_batch": [2, 5], "next_post_seconds": 9180, "next_comment_seconds": 420}}
+{"timestamp": "2026-05-21T19:47:16.774881Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:47:16.819668Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T19:48:36.204240Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T19:48:36.219040Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T19:48:36.288076Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T19:48:36.418675Z", "iteration": 3, "repo": "v1", "stage": "x_post", "status": "no_candidate", "details": {}}
+{"timestamp": "2026-05-21T19:48:36.426443Z", "iteration": 3, "repo": "v1", "stage": "public_comment_budget", "status": "reset", "details": {"reason": "initial_post", "budget": 22}}
+{"timestamp": "2026-05-21T19:48:36.464790Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 1, "total": 3}}
+{"timestamp": "2026-05-21T19:48:36.502024Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 5, "budget_remaining": 22}}
+{"timestamp": "2026-05-21T19:48:36.651285Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:48:36.696761Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T19:49:54.182002Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T19:49:54.189667Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T19:49:54.233006Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T19:49:54.484270Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:49:54.495656Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 22}}
+{"timestamp": "2026-05-21T19:50:22.532631Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 2, "total": 3}}
+{"timestamp": "2026-05-21T19:50:22.547715Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 4, "budget_remaining": 22}}
+{"timestamp": "2026-05-21T19:50:22.705564Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:50:22.764984Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T19:51:37.772148Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T19:51:37.779838Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T19:51:37.817537Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T19:51:37.991138Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:51:37.999376Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 22}}
+{"timestamp": "2026-05-21T19:51:53.030972Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 3, "total": 3}}
+{"timestamp": "2026-05-21T19:51:53.044562Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 4, "budget_remaining": 22}}
+{"timestamp": "2026-05-21T19:51:53.192360Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T19:51:53.233508Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T19:52:57.688133Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T19:52:57.728146Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T19:52:57.798738Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T19:52:58.199957Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T19:52:58.209393Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 22}}
+{"timestamp": "2026-05-21T19:53:13.305763Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:notifications"}}
+{"timestamp": "2026-05-21T19:54:31.877996Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "notifications"}}
+{"timestamp": "2026-05-21T19:54:31.900022Z", "iteration": 3, "repo": "v1", "stage": "notifications", "status": "failed", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T20:00:32.085124Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "/app/chromium"}}
+{"timestamp": "2026-05-21T20:00:32.097001Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T20:00:41.708242Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T20:00:41.749455Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "start", "details": {}}
+{"timestamp": "2026-05-21T20:00:50.755699Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T20:00:50.787593Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:startup"}}
+{"timestamp": "2026-05-21T20:02:07.191927Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T20:02:07.199708Z", "iteration": 3, "repo": "v1", "stage": "x_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T20:02:07.246507Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "page_confusion:twitter"}}
+{"timestamp": "2026-05-21T20:02:07.892568Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:browser_llm"}}
+{"timestamp": "2026-05-21T20:02:54.936184Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "failed", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T20:02:54.969178Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:browser_llm"}}
+{"timestamp": "2026-05-21T20:02:58.405430Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "browser_llm"}}
+{"timestamp": "2026-05-21T20:06:59.482238Z", "iteration": 3, "repo": "v1", "stage": "page_confusion", "status": "captured", "details": {"site": "twitter", "goal": "log into X and reach the home timeline", "selector": ""}}
+{"timestamp": "2026-05-21T20:06:59.536606Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "github:startup"}}
+{"timestamp": "2026-05-21T20:07:10.050430Z", "iteration": 3, "repo": "v1", "stage": "github_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T20:07:10.058788Z", "iteration": 3, "repo": "v1", "stage": "github_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T20:07:10.106414Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "gemini:startup"}}
+{"timestamp": "2026-05-21T20:07:21.236153Z", "iteration": 3, "repo": "v1", "stage": "gemini_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T20:07:21.246181Z", "iteration": 3, "repo": "v1", "stage": "gemini_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T20:07:21.311929Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:startup"}}
+{"timestamp": "2026-05-21T20:08:10.981137Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T20:08:10.986160Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-21T20:08:11.035270Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:startup"}}
+{"timestamp": "2026-05-21T20:08:15.052360Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-21T20:08:15.058675Z", "iteration": 3, "repo": "v1", "stage": "deepseek_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-21T20:08:15.137686Z", "iteration": 3, "repo": "v1", "stage": "schedule", "status": "ready", "details": {"post_window_minutes": [90, 180], "comment_window_minutes": [4, 10], "mention_window_minutes": [90, 150], "notification_window_minutes": [120, 180], "comments_between_posts": [10, 40], "comment_batch": [2, 5], "next_post_seconds": 6840, "next_comment_seconds": 360}}
+{"timestamp": "2026-05-21T20:08:15.270643Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T20:08:15.292989Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T20:09:27.936816Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T20:09:27.947129Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T20:09:28.006203Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T20:09:28.151648Z", "iteration": 3, "repo": "v1", "stage": "x_post", "status": "no_candidate", "details": {}}
+{"timestamp": "2026-05-21T20:09:28.159874Z", "iteration": 3, "repo": "v1", "stage": "public_comment_budget", "status": "reset", "details": {"reason": "initial_post", "budget": 27}}
+{"timestamp": "2026-05-21T20:09:28.201710Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 1, "total": 3}}
+{"timestamp": "2026-05-21T20:09:28.245705Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 5, "budget_remaining": 27}}
+{"timestamp": "2026-05-21T20:09:28.362600Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T20:09:28.387941Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T20:10:47.471371Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T20:10:47.486749Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T20:10:47.546252Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T20:10:47.720573Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T20:10:47.725970Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 27}}
+{"timestamp": "2026-05-21T20:11:12.758164Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 2, "total": 3}}
+{"timestamp": "2026-05-21T20:11:12.764487Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 3, "budget_remaining": 27}}
+{"timestamp": "2026-05-21T20:11:12.864921Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T20:11:12.890135Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T20:12:30.134245Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T20:12:30.142490Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T20:12:30.184044Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T20:12:30.335274Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T20:12:30.341078Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 27}}
+{"timestamp": "2026-05-21T20:12:58.372055Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 3, "total": 3}}
+{"timestamp": "2026-05-21T20:12:58.380628Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 2, "budget_remaining": 27}}
+{"timestamp": "2026-05-21T20:12:58.485453Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-21T20:12:58.509177Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-21T20:14:13.300394Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-21T20:14:13.327373Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-21T20:14:13.384068Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-21T20:14:13.591020Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-21T20:14:13.598354Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 27}}
+{"timestamp": "2026-05-21T20:14:13.648044Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:notifications"}}
+{"timestamp": "2026-05-21T20:15:27.116273Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "notifications"}}
+{"timestamp": "2026-05-21T20:15:27.125059Z", "iteration": 3, "repo": "v1", "stage": "notifications", "status": "failed", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-25T13:57:00.719158Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\chromium"}}
+{"timestamp": "2026-05-25T13:57:00.721444Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-25T13:58:23.528627Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\chromium"}}
+{"timestamp": "2026-05-25T13:58:23.529681Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-25T14:05:40.395762Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\chromium"}}
+{"timestamp": "2026-05-25T14:05:40.396823Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-25T14:06:56.765849Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\chromium"}}
+{"timestamp": "2026-05-25T14:06:56.767358Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-25T14:08:14.316551Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\chromium"}}
+{"timestamp": "2026-05-25T14:08:14.317178Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-25T14:10:13.354405Z", "iteration": 3, "repo": "v1", "stage": "run", "status": "start", "details": {"hours_per_run": 5.0, "profile": "D:\\DHRUV\\Aii\\zara\\chromium"}}
+{"timestamp": "2026-05-25T14:10:13.354737Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "start", "details": {}}
+{"timestamp": "2026-05-25T14:11:19.709348Z", "iteration": 3, "repo": "v1", "stage": "browser_start", "status": "success", "details": {}}
+{"timestamp": "2026-05-25T14:11:21.347267Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "start", "details": {}}
+{"timestamp": "2026-05-25T14:11:31.711893Z", "iteration": 3, "repo": "v1", "stage": "browser_warmup", "status": "success", "details": {}}
+{"timestamp": "2026-05-25T14:11:34.864150Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:startup"}}
+{"timestamp": "2026-05-25T14:17:04.795467Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-25T14:17:04.797400Z", "iteration": 3, "repo": "v1", "stage": "x_login", "status": "failed", "details": {}}
+{"timestamp": "2026-05-25T14:17:57.454085Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "github:startup"}}
+{"timestamp": "2026-05-25T14:18:16.142954Z", "iteration": 3, "repo": "v1", "stage": "github_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-25T14:18:16.145943Z", "iteration": 3, "repo": "v1", "stage": "github_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-25T14:18:16.289237Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "gemini:startup"}}
+{"timestamp": "2026-05-25T14:18:37.031423Z", "iteration": 3, "repo": "v1", "stage": "gemini_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-25T14:18:37.032472Z", "iteration": 3, "repo": "v1", "stage": "gemini_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-25T14:18:37.047558Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "chatgpt:startup"}}
+{"timestamp": "2026-05-25T14:19:08.977556Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-25T14:19:08.978555Z", "iteration": 3, "repo": "v1", "stage": "chatgpt_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-25T14:19:08.996639Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "deepseek:startup"}}
+{"timestamp": "2026-05-25T14:19:24.605725Z", "iteration": 3, "repo": "v1", "stage": "deepseek_session", "status": "ready", "details": {"reason": "startup"}}
+{"timestamp": "2026-05-25T14:19:24.606720Z", "iteration": 3, "repo": "v1", "stage": "deepseek_login", "status": "success", "details": {}}
+{"timestamp": "2026-05-25T14:19:24.610265Z", "iteration": 3, "repo": "v1", "stage": "schedule", "status": "ready", "details": {"post_window_minutes": [15, 180], "comment_window_minutes": [1, 40], "mention_window_minutes": [1, 5], "notification_window_minutes": [120, 180], "comments_between_posts": [4, 8], "comment_batch": [1, 2], "next_post_seconds": 5880, "next_comment_seconds": 960}}
+{"timestamp": "2026-05-25T14:19:24.706196Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-25T14:19:24.725299Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:trend_research"}}
+{"timestamp": "2026-05-25T14:22:20.407919Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "trend_research"}}
+{"timestamp": "2026-05-25T14:22:20.409017Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "fallback", "details": {"reason": "twitter session unavailable"}}
+{"timestamp": "2026-05-25T14:22:20.410215Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-25T14:22:20.418101Z", "iteration": 3, "repo": "v1", "stage": "x_post", "status": "no_candidate", "details": {}}
+{"timestamp": "2026-05-25T14:22:20.419328Z", "iteration": 3, "repo": "v1", "stage": "public_comment_budget", "status": "reset", "details": {"reason": "initial_post", "budget": 29}}
+{"timestamp": "2026-05-25T14:22:20.420657Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 1, "total": 2}}
+{"timestamp": "2026-05-25T14:22:20.422439Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 2, "budget_remaining": 29}}
+{"timestamp": "2026-05-25T14:22:20.445584Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-25T14:22:20.448352Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-25T14:22:20.465252Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-25T14:22:20.467104Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 29}}
+{"timestamp": "2026-05-25T14:22:48.469305Z", "iteration": 3, "repo": "v1", "stage": "initial_public_image_cycle", "status": "start", "details": {"reason": "initial_post", "cycle": 2, "total": 2}}
+{"timestamp": "2026-05-25T14:22:48.470850Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "start", "details": {"trigger": "initial_post_burst", "requested": 3, "budget_remaining": 29}}
+{"timestamp": "2026-05-25T14:22:48.520995Z", "iteration": 3, "repo": "v1", "stage": "trend_queries", "status": "ready", "details": {"count": 8}}
+{"timestamp": "2026-05-25T14:22:48.523392Z", "iteration": 3, "repo": "v1", "stage": "trend_research", "status": "empty", "details": {"reason": "only simulated trend candidates"}}
+{"timestamp": "2026-05-25T14:22:48.536123Z", "iteration": 3, "repo": "v1", "stage": "trend_comments", "status": "complete", "details": {"commented": 0, "attempted": 0}}
+{"timestamp": "2026-05-25T14:22:48.537276Z", "iteration": 3, "repo": "v1", "stage": "public_image_comments", "status": "complete", "details": {"trigger": "initial_post_burst", "commented": 0, "budget_remaining": 29}}
+{"timestamp": "2026-05-25T14:23:16.905177Z", "iteration": 3, "repo": "v1", "stage": "browser_health", "status": "ready", "details": {"reason": "twitter:notifications"}}
+{"timestamp": "2026-05-25T14:25:35.611568Z", "iteration": 3, "repo": "v1", "stage": "twitter_session", "status": "failed", "details": {"reason": "notifications"}}
+{"timestamp": "2026-05-25T14:25:35.612888Z", "iteration": 3, "repo": "v1", "stage": "notifications", "status": "failed", "details": {"reason": "twitter session unavailable"}}
